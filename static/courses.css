@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family:Helvetica;
+}
+body{
+ height: 100vh;
+ background-color: black;
+ background-image:url("../static/images/bg.svg") ;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.container{
+    width: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.header{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+.image{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+}
+.image span{
+    color: white !important;
+}
+.navitems ul{
+    color: white;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+
+}
+.navitems ul li{
+    color: white;
+    padding: 15px;
+}
+.btn-request{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+.btn-sign{
+    color: black;
+    background-color: aquamarine;
+    padding:8px 24px;
+    border-radius: 5px;
+}
+/* views */
+.view1{
+    margin: 0 auto;
+    position: relative;
+    top:50;
+    z-index: 1;
+    width:100% ;
+    padding: 30px;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+    margin-top: 60px;
+    position: relative;
+    top: 0;
+}
+.view1 .left h1 span{
+    font-family: 'Neue Manchina' !important;
+    font-size: 64px;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    word-spacing: 10px;
+}
+.text-highlight{
+    color: #24CFA6 !important;
+
+}
+.btn-check{
+    margin-top: 40px;
+    background-color:#24CFA6 ;
+    padding: 6px 22px;
+    border-radius: 5px;
+    top: 50px;
+    
+
+}
+.side-text{
+    margin: 10px;
+    margin-top: 20px;
+    width: 50%;
+    color: white;
+    justify-content: left;
+    align-items: left;
+    padding: 40px 55px;
+    position: absolute;
+    top: 65%;
+    left: -25px;
+    
+    z-index: 0;
+    font-size: 25px;
+}
+@media (min-width:480px){
+    .side-text{
+        visibility: none;
+    }
+}
+
+
+/* view3 */
+
+.view3{
+    margin-top:180px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+    
+}
+.top span{
+    color: white ;
+    font-size:21px;
+
+}
+
+.view4{
+    margin-top:40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.view5{
+    color: white;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+
+}
+.youtubebox{
+    border: 1px solid transparent;
+    border: 5px;
+}
+
+.btn-explore{
+   width: fit-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: #24CFA6;
+    padding: 9px 27px;
+    border-radius:5px ;
+    margin:  0 auto;
+    
+}
+
+.btn-explore a{
+ color: white;
+ text-decoration: none;
+}
+
+/* courses */
+
+.course-heading{
+    margin-top:100px;
+    width:30%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.coures{
+    width:90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.course-box{
+    width:30%;
+    border:1px solid transparent;
+    border-radius: 15px;
+    background-color: #121212;
+    margin:10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.course-title h2{
+    width:100%;
+    padding:20px;
+    color: white;
+    font-size: 20px;
+}
+
+.course-lang p{
+    border: 1px solid transparent;
+    background-color: #646161;
+    width:fit-content;
+    padding:10px 15px;
+    color: white;
+    margin-left:20px;  
+}
+
+.course-discount span{
+    padding:15px;
+    line-height:20px;
+    color: #24CFA6;
+}
+
+.course-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap:18px;
+    color: white;
+    font-size: 20px;
+}
+
+.course-price small{
+    color: #646161;
+    text-decoration: line-through;
+}
+.discounts p{
+    border:1px solid transparent;
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+#button a{
+    margin-top: 40px;
+    background-color:#24CFA6 ;
+    padding: 6px 22px;
+    border-radius: 5px;
+    top: 50px;
+}
+/* footer */
+
+
+/* footer */
+.footer{
+    width:90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: start;
+    margin: 0 auto;
+
+   
+}
+
+.media-text p{
+color: white;
+line-height:40px;
+}
+
+.medias{
+display: flex;
+gap: 2rem;
+background-color: white;
+}
+.bi-icons{
+    color: white;
+    font-size:20px;
+}
+
+
+.footer-section{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-section h2{
+    background-color: white;
+    color: white; 
+    font-size: 15px;
+    margin-bottom:10px;
+}
+
+.options{
+    display: flex;
+    background-color: white;
+    justify-content: start;
+    flex-direction: column;
+
+}
+.options a{
+    text-decoration: none;
+    color: white;
+    padding:4px;
+}
+
+.horizontal-line hr{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top:40px;
+    margin-bottom: 25px;
+    border: none; 
+    height: 2px;
+    background-color:#545151;
+}
+
+
+.footer1{
+    width:90%;
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    margin: 0 auto;
+}
+
+.footer-text h1{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    
+}
+.footer-text span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background-color: white;
+}
+.navitems ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+/* Styling for COMPANY section */
+h2 {
+   
+    text-align: center; /* Center align the heading */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.options {
+    text-align: center; /* Center align the links */
+}
+
+.options a {
+   
+    
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    margin: 5px 10px; /* Add spacing between links */
+}
+
+.options a:hover {
+    color: #00BFFF; /* Highlight color on hover */
+}

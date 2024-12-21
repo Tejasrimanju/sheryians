@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static: 'signin.css'}">
+</head>
+<body>
+    <nav class="container">
+        <div class="header">
+            <div class="image">
+                <img src="{% static 'sheryians.png' %}" alt="Sheriyans coding school Logo" width="22" height="28">
+                <span>Sheryians Coding school</span>
+                </div>
+                <div class="navitems">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+                <ul>
+                    <li><a class="nav-link " href="#">Home</a></li>
+                    <li><a class="nav-link " href="{% url 'sheryians1:courses' %}">Courses</a></li>
+                    <li><a class="nav-link" href="#">Bootcamp(Kodr)</a></li>
+                    <button class="btn-request">Request Callback</button>
+                    <button class="btn-sign"><a class="nav-link" href="#"></a>sign</button>
+                </ul>
+                </div>
+        </div>
+        </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1>Sign In</h1>
+            <p>Select an option to sign in:</p>
+
+            <!-- Tabs for Phone and Email -->
+            <div class="tabs">
+                <button id="phone-tab" class="tab active" onclick="showTab('phone')">Phone</button>
+                <button id="email-tab" class="tab" onclick="showTab('email')">Email</button>
+            </div>
+
+            <!-- Phone Sign-In Form -->
+            <div id="phone-form" class="form active">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <button class="submit-btn">Sign In with Phone</button>
+            </div>
+
+            <!-- Email Sign-In Form -->
+            <div id="email-form" class="form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button class="submit-btn">Sign In with Email</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
